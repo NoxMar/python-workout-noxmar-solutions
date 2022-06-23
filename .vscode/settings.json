@@ -6,6 +6,7 @@
     "python.linting.pylintEnabled": true,
     "cSpell.words": [
         "codepoints",
+        "dictdiff",
         "dubbi",
         "firstlast",
         "mysum",
