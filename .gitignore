@@ -82,3 +82,7 @@ __pypackages__/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# This file contanis iformation extracted from /etc/passwd file of the mahcine
+# script ch05-files/e22_passwd_to_csv.py was run on.
+ch05-files/passwd.csv
