@@ -61,7 +61,8 @@ ignored-modules=
 
 # Python code to execute, usually for sys.path manipulation such as
 # pygtk.require().
-#init-hook=
+# To recognize imports fomr modules in the same directory.
+init-hook='import sys; sys.path.append(".")'
 
 # Use multiple processes to speed up Pylint. Specifying 0 will auto-detect the
 # number of processors available to use.
@@ -339,6 +340,8 @@ good-names=i,
            k,
            e,
            f,
+           x,
+           n,
            ex,
            Run,
            _
