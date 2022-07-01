@@ -6,7 +6,7 @@ Solution for exercise 35b "gematria_dict" from chapter 7 of "Python Workout" by 
 from typing import Iterable
 from os import PathLike
 
-from .e35a_gematria_1 import get_letters_positions_dict
+from e35a_gematria_1 import get_letters_positions_dict  # pylint: disable=import-error
 
 _GEMATRIA_VALUES_DICT = get_letters_positions_dict()
 _WORDS_DICT_PATH = "words.txt"
@@ -21,7 +21,7 @@ def gematria_for(word: str) -> int:
 
 def gematria_equal_words(word: str,
                          dict_: PathLike = "words.txt") -> Iterable[str]:
-    """Returns list of all words from `dict_` that have the same gemtria as `word`.
+    """Returns list of all words from `dict_` that have the same gematria as `word`.
 
     File pointed to by `dict_` should be dict style file (one word per line) and
     be readable. No caching is being performed since used dictionary can be
